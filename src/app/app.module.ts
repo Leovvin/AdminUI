@@ -6,7 +6,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {
-  MatCheckboxModule, MatIconModule,
+  MatButtonModule,
+  MatCheckboxModule, MatIconModule, MatMenuModule,
   MatSidenavModule,
   MatToolbarModule
 } from '@angular/material';
@@ -23,6 +24,8 @@ import {
     MatSidenavModule,
     MatCheckboxModule,
     MatToolbarModule,
+    MatButtonModule,
+    MatMenuModule,
     MatIconModule
   ],
   providers: [],

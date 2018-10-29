@@ -1,10 +1,26 @@
-<mat-sidenav-container class="example-container" (backdropClick)="close('backdrop')">
-  <mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>
-    <p><button mat-button (click)="close('toggle button')">Toggle</button></p>
-  </mat-sidenav>
+<mat-toolbar color="primary">
+  <span>Admin UI</span>
+  <button mat-button>Side</button>
+  <!-- This fills the remaining space of the current row -->
+  <span class="example-fill-remaining-space"></span>
 
-  <mat-sidenav-content>
-    <p><button mat-button (click)="sidenav.open()">Open</button></p>
-    <p>Closed due to: {{reason}}</p>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+  <span>
+    <button mat-button [matMenuTriggerFor]="menu">LEL026</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Logout</button>
+    </mat-menu>
+
+  </span>
+</mat-toolbar>
+
+
+<!--<mat-sidenav-container class="example-container" (backdropClick)="close('backdrop')">-->
+  <!--<mat-sidenav #sidenav (keydown.escape)="close('escape')" disableClose>-->
+    <!--<p><button mat-button (click)="close('toggle button')">Toggle</button></p>-->
+  <!--</mat-sidenav>-->
+
+  <!--<mat-sidenav-content>-->
+    <!--<p><button mat-button (click)="sidenav.open()">Open</button></p>-->
+    <!--<p>Closed due to: {{reason}}</p>-->
+  <!--</mat-sidenav-content>-->
+<!--</mat-sidenav-container>-->
